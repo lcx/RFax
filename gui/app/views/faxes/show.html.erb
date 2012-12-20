@@ -1,0 +1,59 @@
+<% title "Fax" %>
+
+<p>
+  <strong>State:</strong>
+  <%=h @fax.state %>
+</p>
+<p>
+  <strong>Dest:</strong>
+  <%=h @fax.dest %>
+</p>
+<p>
+  <strong>Localstationid:</strong>
+  <%=h @fax.localstationid %>
+</p>
+<p>
+  <strong>Localheaderinfo:</strong>
+  <%=h @fax.localheaderinfo %>
+</p>
+<p>
+  <strong>Faxstatus:</strong>
+  <%=h @fax.faxstatus %>
+</p>
+<p>
+  <strong>Faxerror:</strong>
+  <%=h @fax.faxerror %>
+</p>
+<p>
+  <strong>Remotestationid:</strong>
+  <%=h @fax.remotestationid %>
+</p>
+<p>
+  <strong>Faxpages:</strong>
+  <%=h @fax.faxpages %>
+</p>
+<p>
+  <strong>Faxbitrate:</strong>
+  <%=h @fax.faxbitrate %>
+</p>
+<p>
+  <strong>Faxresolution:</strong>
+  <%=h @fax.faxresolution %>
+</p>
+<p>
+  <strong>Tries:</strong>
+  <%=h @fax.tries %>
+</p>
+<p>
+  <strong>Customer:</strong>
+  <%=h @fax.user_id %>
+</p>
+<p>
+	<%= image_tag(@fax.attachment.url(:thumb))%>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_faxis_path(@fax) %> |
+  <%= link_to "Destroy", @fax, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", faxes_path %>
+</p>

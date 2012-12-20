@@ -1,0 +1,8 @@
+<% semantic_form_for @fax, :html => {:multipart => true} do |form| %>
+  <% form.inputs do %>
+    <%= form.input :dest, :label => 'Destintation' %>
+		<%= form.input :attachment, :label => 'Attachment'%>
+  <% end %>
+  <%= form.buttons %>
+<% end %>
+

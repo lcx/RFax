@@ -1,0 +1,8 @@
+<% semantic_form_for @service_type do |form| %>
+  <% form.inputs do %>
+    <%= form.input :type_no, :label => 'Type No' %>
+    <%= form.input :name, :label => 'Type Text' %>
+  <% end %>
+  <%= form.buttons %>
+<% end %>
+

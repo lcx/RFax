@@ -1,0 +1,10 @@
+<% semantic_form_for @did do |form| %>
+  <% form.inputs do %>
+    <%= form.input :user, :label => 'User' %>
+    <%= form.input :did, :label => 'Did' %>
+    <%= form.input :service_type, :label => 'Service Type' %>
+    <%= form.input :state, :label => 'State' %>
+  <% end %>
+  <%= form.buttons %>
+<% end %>
+

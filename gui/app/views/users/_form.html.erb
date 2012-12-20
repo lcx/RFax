@@ -1,0 +1,9 @@
+<% semantic_form_for @user do |form| %>
+  <% form.inputs do %>
+    <%= form.input :username, :label => 'Username' %>
+    <%= form.input :email, :label => 'Email' %>
+    <%= form.input :password, :label => 'Password' %>
+  <% end %>
+  <%= form.buttons %>
+<% end %>
+

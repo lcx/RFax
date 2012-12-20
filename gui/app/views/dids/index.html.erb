@@ -1,0 +1,23 @@
+<% title "Dids" %>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Did</th>
+    <th>Service Type</th>
+    <th>State</th>
+  </tr>
+  <% for did in @dids %>
+    <tr>
+      <td><%=h did.user_id %></td>
+      <td><%=h did.did %></td>
+      <td><%=h did.service_type_id %></td>
+      <td><%=h did.state %></td>
+      <td><%= link_to "Show", did %></td>
+      <td><%= link_to "Edit", edit_did_path(did) %></td>
+      <td><%= link_to "Destroy", did, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Did", new_did_path %></p>

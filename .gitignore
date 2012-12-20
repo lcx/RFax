@@ -1,0 +1,4 @@
+log/*
+vendor/cache/*
+
+/test.rb

@@ -1,0 +1,20 @@
+<% title "Mail Header" %>
+
+<p>
+  <strong>Mail Header:</strong>
+  <%=h @mail_header.mail_header %>
+</p>
+<p>
+  <strong>User:</strong>
+  <%=h @mail_header.user_id %>
+</p>
+<p>
+  <strong>Did:</strong>
+  <%=h @mail_header.did_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_mail_header_path(@mail_header) %> |
+  <%= link_to "Destroy", @mail_header, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", mail_headers_path %>
+</p>

@@ -1,0 +1,39 @@
+<% title "Faxes" %>
+
+<table>
+  <tr>
+    <th>State</th>
+    <th>Dest</th>
+    <th>Localstationid</th>
+    <th>Localheaderinfo</th>
+    <th>Faxstatus</th>
+    <th>Faxerror</th>
+    <th>Remotestationid</th>
+    <th>Faxpages</th>
+    <th>Faxbitrate</th>
+    <th>Faxresolution</th>
+    <th>Tries</th>
+    <th>Customer</th>
+  </tr>
+  <% for fax in @faxes %>
+    <tr>
+      <td><%=h fax.state %></td>
+      <td><%=h fax.dest %></td>
+      <td><%=h fax.localstationid %></td>
+      <td><%=h fax.localheaderinfo %></td>
+      <td><%=h fax.faxstatus %></td>
+      <td><%=h fax.faxerror %></td>
+      <td><%=h fax.remotestationid %></td>
+      <td><%=h fax.faxpages %></td>
+      <td><%=h fax.faxbitrate %></td>
+      <td><%=h fax.faxresolution %></td>
+      <td><%=h fax.tries %></td>
+      <td><%=h fax.user_id %></td>
+      <td><%= link_to "Show", fax %></td>
+      <td><%= link_to "Edit", edit_faxis_path(fax) %></td>
+      <td><%= link_to "Destroy", fax, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Fax", new_faxis_path %></p>

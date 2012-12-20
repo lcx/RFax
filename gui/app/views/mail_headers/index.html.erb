@@ -1,0 +1,21 @@
+<% title "Mail Headers" %>
+
+<table>
+  <tr>
+    <th>Mail Header</th>
+    <th>User</th>
+    <th>Did</th>
+  </tr>
+  <% for mail_header in @mail_headers %>
+    <tr>
+      <td><%=h mail_header.mail_header %></td>
+      <td><%=h mail_header.user_id %></td>
+      <td><%=h mail_header.did_id %></td>
+      <td><%= link_to "Show", mail_header %></td>
+      <td><%= link_to "Edit", edit_mail_header_path(mail_header) %></td>
+      <td><%= link_to "Destroy", mail_header, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Mail Header", new_mail_header_path %></p>

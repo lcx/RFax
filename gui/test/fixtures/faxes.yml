@@ -1,0 +1,27 @@
+one:
+  state: MyString
+  dest: MyString
+  localstationid: MyString
+  localheaderinfo: MyString
+  faxstatus: MyString
+  faxerror: MyString
+  remotestationid: MyString
+  faxpages: 1
+  faxbitrate: 1
+  faxresolution: MyString
+  tries: 1
+  user_id: 1
+
+two:
+  state: MyString
+  dest: MyString
+  localstationid: MyString
+  localheaderinfo: MyString
+  faxstatus: MyString
+  faxerror: MyString
+  remotestationid: MyString
+  faxpages: 1
+  faxbitrate: 1
+  faxresolution: MyString
+  tries: 1
+  user_id: 1

@@ -1,0 +1,2 @@
+module MailHeadersHelper
+end

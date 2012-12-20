@@ -1,0 +1,135 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    SystemTimer (1.2.3)
+    aasm (2.2.0)
+    actionmailer (2.3.8)
+      actionpack (= 2.3.8)
+    actionpack (2.3.8)
+      activesupport (= 2.3.8)
+      rack (~> 1.1.0)
+    activerecord (2.3.8)
+      activesupport (= 2.3.8)
+    activeresource (2.3.8)
+      activesupport (= 2.3.8)
+    activesupport (2.3.8)
+    adhearsion (0.8.6)
+      activesupport (>= 2.1.0)
+      log4r (>= 1.0.5)
+      rubigen (>= 1.0.6)
+    authlogic (2.1.6)
+      activesupport
+    awesome_print (0.2.1)
+    capistrano (2.9.0)
+      highline
+      net-scp (>= 1.0.0)
+      net-sftp (>= 2.0.0)
+      net-ssh (>= 2.0.14)
+      net-ssh-gateway (>= 1.1.0)
+    capistrano-ext (1.2.1)
+      capistrano (>= 1.0.0)
+    cgi_multipart_eof_fix (2.5.0)
+    color (1.4.1)
+    columnize (0.3.1)
+    daemons (1.1.0)
+    eventmachine (0.12.10)
+    fastthread (1.0.7)
+    formtastic (1.1.0)
+      actionpack (>= 2.3.0)
+      activesupport (>= 2.3.0)
+      i18n (>= 0.4.0)
+    gem_plugin (0.2.3)
+    god (0.11.0)
+    highline (1.6.8)
+    hoe (2.6.2)
+      rake (>= 0.8.7)
+      rubyforge (>= 2.0.4)
+    i18n (0.4.1)
+    json_pure (1.4.6)
+    linecache (0.43)
+    log4r (1.1.8)
+    mail (2.2.7)
+      activesupport (>= 2.3.6)
+      mime-types
+      treetop (>= 1.4.5)
+    memcache-client (1.8.3)
+    mime-types (1.16)
+    mongrel (1.1.5)
+      cgi_multipart_eof_fix (>= 2.4)
+      daemons (>= 1.0.3)
+      fastthread (>= 1.0.1)
+      gem_plugin (>= 0.2.3)
+    mysql (2.8.1)
+    net-scp (1.0.4)
+      net-ssh (>= 1.99.1)
+    net-sftp (2.0.5)
+      net-ssh (>= 2.0.9)
+    net-ssh (2.2.1)
+    net-ssh-gateway (1.1.0)
+      net-ssh (>= 1.99.1)
+    paperclip (2.3.4)
+      activerecord
+      activesupport
+    pdf-toolkit (0.49)
+      activesupport (> 0.0.0)
+    pdf-writer (1.1.8)
+      color (>= 1.4.0)
+      transaction-simple (~> 1.3)
+    polyglot (0.3.1)
+    prowl (0.1.3)
+    rack (1.1.0)
+    rails (2.3.8)
+      actionmailer (= 2.3.8)
+      actionpack (= 2.3.8)
+      activerecord (= 2.3.8)
+      activeresource (= 2.3.8)
+      activesupport (= 2.3.8)
+      rake (>= 0.8.3)
+    rake (0.8.7)
+    rubigen (1.5.5)
+      activesupport (~> 2.3.5)
+    ruby-debug (0.10.3)
+      columnize (>= 0.1)
+      ruby-debug-base (~> 0.10.3.0)
+    ruby-debug-base (0.10.3)
+      linecache (>= 0.3)
+    ruby-growl (3.0)
+    rubyforge (2.0.4)
+      json_pure (>= 1.1.7)
+    sqlite3-ruby (1.3.1)
+    transaction-simple (1.4.0)
+      hoe (>= 1.1.7)
+    treetop (1.4.8)
+      polyglot (>= 0.3.1)
+    validation_reflection (0.3.8)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  SystemTimer (~> 1.2.3)
+  aasm
+  adhearsion
+  authlogic
+  awesome_print
+  capistrano
+  capistrano-ext
+  eventmachine
+  formtastic (~> 1.1.0)
+  god
+  i18n
+  mail
+  memcache-client (= 1.8.3)
+  mongrel
+  mysql (= 2.8.1)
+  paperclip
+  pdf-toolkit
+  pdf-writer
+  prowl
+  rack (= 1.1.0)
+  rails (= 2.3.8)
+  rake (= 0.8.7)
+  ruby-debug
+  ruby-growl
+  sqlite3-ruby
+  validation_reflection (= 0.3.8)

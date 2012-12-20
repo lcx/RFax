@@ -1,0 +1,5 @@
+one:
+  state: MyString
+
+two:
+  state: MyString
